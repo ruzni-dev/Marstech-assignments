@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #000000;
+}
+
+h2 {
+    text-align: left;
+}
+
+.sec1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.color-box {
+  width: 190px;
+  height: 100px;
+  margin: 12px auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.blue {
+  background-color: #0000FF;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.green {
+    background-color: #008000;
+}
+
+.orange {
+    background-color: #ffa500;
+}
+
+.purple {
+    background-color: #800080;
+}
+
+.red-orange {
+    background-color: #ff5200;
+}
+
+.yellow-orange {
+    background-color: #ffd200;
+}
+
+.yellow-green {
+    background-color: #80c000;
+}
+
+.blue-green {
+    background-color: #004080;
+}
+
+.blue-purple {
+    background-color: #4000c0;
+}
+
+.red-purple {
+    background-color: #c00040;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.grey {
+    background-color: #808080;
+}
+
+.brown {
+    background-color: #a52a2a;
+}
+
+.beige {
+    background-color: #f5f5dc;
+}
+
+.color-box .text {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+.color-box:hover .text {
+    transform: translateY(0);
+}
+
+.white, .beige, .yellow {
+    color: black;
+}
